@@ -194,6 +194,53 @@ int main(){
 }
 ```
 
+**✅ Problem No:** 6  
+
+**Problem Name:** Write a program to implement Polygon(rectangle) filling algorithm.
+
+**Source Code:**  
+
+```cpp
+#include<windows.h>
+#include<GL/glut.h>
+#include<stdlib.h>
+#include<math.h>
+#include<stdio.h>
+
+
+void drawReact(int bl_x, int bl_y,int br_x,int br_y,int tr_x,int tr_y,int tl_x,int tl_y){
+    glBegin(GL_QUADS);
+        glColor3f(0.0,0.0,1.0);
+        glVertex2f(bl_x, bl_y);
+        glVertex2f(br_x, br_y);
+        glVertex2f(tr_x, tr_y);
+        glVertex2f(tl_x, tl_y);
+    glEnd();
+}
+
+static void display(void){
+    glPushMatrix();
+        drawReact(0, 3, 20, 3, 20, 20, 0, 20);
+    glPopMatrix();
+
+    glutSwapBuffers();
+}
+
+int main(){
+    glutInitDisplayMode(GLUT_RGB|GLUT_DOUBLE|GLUT_DEPTH);
+    glutInitWindowSize(1000, 1000);
+    glutInitWindowPosition(100, 100);
+    glutCreateWindow("Midpoint Circle");
+    glClearColor(0,0,0,0);
+    glOrtho(-200, 200, -200, 200, -1, 1);
+
+    glutDisplayFunc(display);
+    glutMainLoop();
+
+    return EXIT_SUCCESS;
+}
+```
+
 **✅ Problem No:** 11  
 
 **Problem Name:** Write a program to implement Cohen-Sutherland line clipping algorithm.
