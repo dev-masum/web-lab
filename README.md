@@ -87,7 +87,7 @@
 </html>
 ```
 
-**✅ Problem No:** 3  
+**✅✅✅ Problem No:** 3  
 
 **Problem Name:** Design a simple website using CSS containing formatted text, forms, tables and link styles. (Must use three ways of inserting CSS external, internal and inline style).
 
@@ -441,7 +441,7 @@ if ($row = mysqli_fetch_assoc($result)) {
 ?>
 ```
 
-**✅ Problem No:** 7  
+**✅✅✅ Problem No:** 7  
 
 **Problem Name:** Design a page where user can input his/her personal information like name, address, email, gender, mobile number, etc. and perform common input validation using JavaScript like valid email, mobile number should be 11 digits, mandatory field check etc.
 

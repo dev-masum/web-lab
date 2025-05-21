@@ -1,4 +1,4 @@
-**✅ Problem No:** 2  
+**✅✅✅ Problem No:** 2  
 
 **Problem Name:** Write a simple lex specification to recognize the identifier.
 
@@ -36,7 +36,7 @@ int yywrap(void)
 }
 ```
 
-**✅ Problem No:** 3  
+**✅✅✅ Problem No:** 3  
 
 **Problem Name:** Write a simple lex specification to recognize real numbers.
 
